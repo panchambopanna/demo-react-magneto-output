@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
+import Home from "../src/views/Home";
+import logo from "./logo.jpg";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+  const help = "Need help?";
+  const login = "Login";
+  let pathUrl = window.location.pathname;
+  console.log(pathUrl);
+  if (pathUrl === "/") {
+    return <Home />;
+  } else {
+    return (
+      <>
+        <Header logo={logo} help={help} login={login} />
+        <Footer />
+      </>
+    );
+  }
 }
-
-export default App;
