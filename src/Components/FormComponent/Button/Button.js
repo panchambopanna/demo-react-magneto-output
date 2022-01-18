@@ -1,12 +1,12 @@
 import "./button.stylesheet.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 export default function ButtonComponent(props) {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const changeRoutePath = () => {
     let pathUrl = props.path;
     console.log(pathUrl);
-    history.push(pathUrl);
+    navigate(pathUrl);
   };
   return (
     <>
