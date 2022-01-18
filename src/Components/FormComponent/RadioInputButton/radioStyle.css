@@ -43,13 +43,13 @@
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  //background-color: #ccc;
+  /*background-color: #ccc;*/
 }
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: white;
-  border: 1px solid #8080803b;t
+  border: 1px solid #8080803b;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */

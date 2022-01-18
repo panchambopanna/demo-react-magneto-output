@@ -1,3 +1,16 @@
+/*container with label*/
+.display-flex-cls {
+  margin-top: -0.4rem;
+  margin-bottom: -1.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.input-label-cls {
+  color: #ffffff;
+  margin-top: 1.4rem;
+}
+
 .custom-select {
   position: relative;
   padding: 0.4rem 0.8rem;

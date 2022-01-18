@@ -9,7 +9,7 @@ const Header = ({ logo, help, login, navTabs }) => {
       <div className="header">
         <div className="rowfirstdiv">
           {logo && (
-            <a href="#default" className="logo">
+            <a href="/" className="logo">
               <img src={logo} alt="Get Quote" />
             </a>
           )}
