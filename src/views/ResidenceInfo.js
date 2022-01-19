@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonComponent from "../Components/FormComponent/Button/Button";
 import Layout from "../Components/PageLayout/Layout";
-import human from "../Images/Humaaans.png";
+import image from "../Images/House search.png";
 import InputText from './../Components/FormComponent/InputComponent/InputText';
 import SelectInputBox from './../Components/SelectInputBox/SelectInputBox';
 import RadioInputButton from './../Components/FormComponent/RadioInputButton/RadioInputButton';
@@ -20,7 +20,7 @@ const ResidenceInfo = (props) => {
 
   //radio button
   const radioList = [
-    { label: "Yes", value: "Yes", checked: "checked" },
+    { label: "Yes", value: "Yes" },
     { label: "No", value: "no" }
   ];
 
@@ -43,7 +43,7 @@ const ResidenceInfo = (props) => {
   return (
     <>
       <Layout
-        img={human}
+        img={image}
         heading={heading}
         btnInfo={btnInfo}
       >

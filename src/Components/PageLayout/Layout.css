@@ -3,15 +3,16 @@
   display: flex;
   text-align: center;
   flex-direction: row;
-  margin: 150;
+  margin-top: 20px;
+  min-height: 500px;
 }
 .layout-col-left {
   flex: 50%;
 }
 .layout-col-left img {
-  margin-top: 5%;
-  width: 40%;
-  height: 70%;
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
 }
 .layout-col-right {
   flex: 50%;
@@ -56,4 +57,11 @@
 }
 .input-box {
   display: flex;
+}
+
+.literal{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
 }

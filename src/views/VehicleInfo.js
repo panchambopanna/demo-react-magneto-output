@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../Components/PageLayout/Layout";
-import human from "../Images/Humaaans.png";
+import image from "../Images/human with car.png";
 import InputText from './../Components/FormComponent/InputComponent/InputText';
 import SelectInputBox from './../Components/SelectInputBox/SelectInputBox';
 import RadioInputButton from './../Components/FormComponent/RadioInputButton/RadioInputButton';
@@ -42,7 +42,7 @@ const VehicleInfo = (props) => {
   return (
     <>
       <Layout
-        img={human}
+        img={image}
         heading={heading}
         btnInfo={btnInfo}
       >

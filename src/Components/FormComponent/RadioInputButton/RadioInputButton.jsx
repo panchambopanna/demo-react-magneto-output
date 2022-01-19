@@ -3,12 +3,12 @@ import "./radioStyle.css";
 export default function RadioInputButton(props) {
   const { handleChange, radioList } = props || {};
   return (
-    <div class="display-flex-cls">
+    <div className="display-flex-cls">
       {radioList.length &&
         radioList.map((item) => {
           const { label, value, checked } = item;
           return (
-            <label class="container">
+            <label className="container">
               <input
                 type="radio"
                 name="radio"
@@ -18,7 +18,7 @@ export default function RadioInputButton(props) {
                 value={value}
               />
               {label}
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
           );
         })}

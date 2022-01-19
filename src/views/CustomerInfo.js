@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../Components/PageLayout/Layout";
-import human from "../Images/Humaaans.png";
+import image from "../Images/discussion.png";
 import InputText from './../Components/FormComponent/InputComponent/InputText';
 import SelectInputBox from './../Components/SelectInputBox/SelectInputBox';
 import RadioInputButton from './../Components/FormComponent/RadioInputButton/RadioInputButton';
@@ -28,10 +28,9 @@ const CustomerInfo = (props) => {
   ];
   //buttons for navigation
   const btnInfo = [
-    { label: "Back", path: "residenceInfo" },
     { label: "Continue", path: "residenceInfo" }
   ]
-    const handleChangeSelect = (param) => {
+  const handleChangeSelect = (param) => {
     console.log(param.getAttribute("value"));
   };
   const handleChange = (e) => {
@@ -40,29 +39,29 @@ const CustomerInfo = (props) => {
   return (
     <>
       <Layout
-        img={human}
+        img={image}
         heading={heading}
         btnInfo={btnInfo}
       >
-            {/*Input fields*/}
-            {inputData && inputData.map((e, index) =>
-              <InputText type={e.type} label={e.value} key={index} />
-            )}
-            {/*Select fields*/}
-            {optionList &&
-              <div className="input-box">
-              <p>Select Gender </p>{" "}
-              <SelectInputBox
-                handleChange={handleChangeSelect}
-                options={optionList}
-              />
-            </div> }
-            {/*Radio fields*/}
-             {radioList &&
-             <div className="input-box">
-              <p>Select Radio </p>{" "}
-              <RadioInputButton radioList={radioList}/>
-            </div>}
+        {/*Input fields*/}
+        {inputData && inputData.map((e, index) =>
+          <InputText type={e.type} label={e.value} key={index} />
+        )}
+        {/*Select fields*/}
+        {optionList &&
+          <div className="input-box">
+            <p>Select Gender </p>{" "}
+            <SelectInputBox
+              handleChange={handleChangeSelect}
+              options={optionList}
+            />
+          </div>}
+        {/*Radio fields*/}
+        {radioList &&
+          <div className="input-box">
+            <p>Select Radio </p>{" "}
+            <RadioInputButton radioList={radioList} />
+          </div>}
       </Layout>
     </>
   );
